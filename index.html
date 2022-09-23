@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="baitap">
+        <div class="content d-flex">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">Bài 1</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">Bài 2</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                    aria-selected="false">Bài 3</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                    aria-selected="false">Bài 4</button>
+                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-setting" type="button" role="tab" aria-controls="v-pills-setting"
+                    aria-selected="false">Bài 5</button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                    aria-labelledby="v-pills-home-tab">
+                    <div class="pane-content">
+                        <h1>
+                            <i class="fa-solid fa-money-bill"></i>
+                            Tính tiền lương nhân viên
+                        </h1>
+                        <div class="title">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Công thức: Lương = Lương 1 ngày * số ngày làm
+                                <br>
+                                Kiến thức áp dụng:
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="form_input my-3">
+                            <div class="mb-3">
+                                <input type="text" id="salary" placeholder="Nhập lương một ngày">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="day" placeholder="Số ngày làm">
+                            </div>
+                            <button id="btn-sum" class="mb-3">Tính lương</button>
+                            <span id="result-salary" class="result"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="pane-content">
+                        <h1>
+                            <i class="fa-solid fa-wallet"></i>
+                            Tính giá trị trung bình
+                        </h1>
+                        <div class="title">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Kiến thức áp dụng:
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                                <li>Xử lý ép kiểu dữ liệu</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="form_input my-3" id="average">
+                            <div class="mb-3">
+                                <input type="text" placeholder="Nhập số thứ 1">
+                                <input type="text" placeholder="Nhập số thứ 2">
+                                <input type="text" placeholder="Nhập số thứ 3">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" placeholder="Nhập số thứ 4">
+                                <input type="text" placeholder="Nhập số thứ 5">
+
+                            </div>
+                            <button id="btn-average" class="mb-3">Tính trung bình</button>
+                            <span id="result-average" class="result"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="pane-content">
+                        <h1>
+                            <i class="fa-solid fa-calculator"></i>
+                            Quy đổi tiền
+                        </h1>
+                        <div class="title">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Kiến thức áp dụng:
+                            <ul>
+                                <li>Áp dụng các kiến thức như bài 1 và 2</li>
+                                <li>Giá USD mặc định 1 USD = 23500</li>
+                                <li>Có thể dùng thêm NumberFormat để số tiền hiển thị đẹp hơn: <a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat"
+                                        target="_blank">NumberFormat</a>
+                                    <br>
+                                    VD: new Intl.NumberFormat('vn-VN').format(23500); => 23,500
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="form_input my-3">
+                            <div class="mb-3">
+                                <input type="text" id="money" placeholder="Nhập số tiền USD">
+                            </div>
+                            <button type="submit" id="btn-exchange" class="mb-3">Quy đổi</button>
+                            <span id="result-exchange" class="result"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="pane-content">
+                        <h1>
+                            <i class="fa-solid fa-calculator"></i>
+                            Tính diện tích, chu vi hình chữ nhật
+                        </h1>
+                        <div class="title">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Kiến thức áp dụng:
+                            <ul>
+                                <li>Áp dụng các kiến thức như các bài trước</li>
+                                <li>Diện tích: dài x rộng</li>
+                                <li>Chu vi: (dài + rộng) x 2</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="form_input my-3">
+                            <div class=" mb-3">
+                                <input type="text" id="width" placeholder="Nhập chiều rộng">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" id="length" placeholder="Nhập chiều dài">
+                            </div>
+                            <button type="submit" id="btn-dientich" class="mb-3">Tính </button>
+                            <span id="result-chuvi" class="result mb-3"></span>
+                            <span id="result-dientich" class="result"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-setting" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="pane-content">
+                        <h1>
+                            <i class="fa-solid fa-money-bill"></i>
+                            Tính tổng 2 ký số
+                        </h1>
+                        <div class="title">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Kiến thức áp dụng:
+                            <ul>
+                                <li>Áp dụng cách tính như demo tổng 3 ký số trên lớp</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="form_input my-3">
+                            <div class="mb-3">
+                                <input type="text" id="number" placeholder="Nhập số có 2 chữ số">
+                            </div>
+                            <button type="submit" class="mb-3" id="btn-number">Submit</button>
+                            <span id="result-number" class="result"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
